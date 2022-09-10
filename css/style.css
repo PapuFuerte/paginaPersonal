@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,700&display=swap');
+
+:root{
+    --primario : #3f86d8;
+    --primarioOscuro : #0097a7;
+    --gradiente : linear-gradient(180deg,#3f86d8 0%,#0097a7 100%);
+    --gradienteTransparencia : linear-gradient(180deg,hsla(212, 66%, 55%, 0.548) 0%,hsla(231, 56%, 37%, 0.527) 100%);
+    --imagen : url(../img/imagen.jpg);
+}
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before,*:after {
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(to top, #d1d1d1 0%, #fff 100%);
+    background-attachment: fixed;
+}
+
+.contenido {
+    padding: 0.1px;
+    height: 100vh;
+    background-image: var(--gradienteTransparencia),var(--imagen);
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    color: #fef;
+    margin: 20rem;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.ocupacion {
+    font-size: 3rem;
+    font-weight: regular;
+    margin: 2rem 0;
+}
+
+.boton {
+    margin-top: 2rem;
+    border-radius: 1rem;
+    display: inline-block;
+    background-color: #0097a777;
+    color: #fefefe;
+    padding: 2rem 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.boton:hover {
+    background-color:#fff;
+    color: #0097a7;
+}
+
+/*pagina cv*/
+.bg-navegacion {
+    background-color: var(--primarioOscuro);
+    padding: 0.1px;
+}
+
+.contendor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.barra__navegacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.enlaces:hover {
+    color: #000;
+}
+.nav {
+    display:flex;
+    gap: 1.5rem;
+}
+
+.section {
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.384);
+    margin: 2rem auto;
+    margin-top: 2rem;
+    /* height: 200vh; */
+    width: 80%;
+    background-color: #fff;
+}
+
+.subtitulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.exp {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.trabajo, .tiempo, .puesto{
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+.actividades {
+    font-size: 1.6rem;
+}
+
+.actividades > ul {
+    list-style: none;
+}
+ul {
+    text-align: center;
+    list-style: none;
+}
+li {
+    padding: .5rem;
+}
+.contacto {
+    margin: 3rem auto;
+    text-align: center;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
